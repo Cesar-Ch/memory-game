@@ -64,12 +64,12 @@ function App() {
         <h1 className="font-extrabold text-white text-4xl ">MEMORY GAME</h1>
       </div>
 
-      <div className="grid grid-cols-5 grid-rows-4 sm:w-[85%] md:w-[600px] md:h-[80%] w-[100%] h-[60%] gap-2">
+      <div className="grid grid-cols-5 grid-rows-4 sm:w-[85%] md:w-[600px] md:h-[80%] w-[100%] h-[60%] ">
         {LOGOS.map((e, i) => {
           const [, url] = e.split("|");
           return (
             <article
-              className=" w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] text-center flex justify-center items-center  rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg hover:border-[#646cff] dark:border-gray-800 dark:shadow-gray-700/25 cursor-pointer 
+              className=" w-[65px] h-[70px] sm:w-[100px] sm:h-[100px] text-center flex justify-center items-center  rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg hover:border-[#646cff] dark:border-gray-800 dark:shadow-gray-700/25 cursor-pointer 
               "
               key={i}
               onClick={() => updateBoard(e)}

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy":"gh-pages -d build"
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "canvas-confetti": "1.6.0",
